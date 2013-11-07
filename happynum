@@ -1,0 +1,21 @@
+#Happy Numbers Project
+def happynum(num):
+    b=0
+    while b!=1: 
+        b= sum(int (i)**2 for i in str(num))
+            
+    if b==1:
+        count= 1 
+    else:
+        count=0
+ 
+    return count
+    
+numb= raw_input (">")
+stg= happynum(numb)
+ 
+if stg==0: 
+    print"Unhappy number" 
+    
+if stg==1: 
+    print "Happy number"
